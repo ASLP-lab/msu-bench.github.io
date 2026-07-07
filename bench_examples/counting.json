@@ -1,0 +1,172 @@
+{
+  "task_id": "counting",
+  "level": "level1",
+  "dimension": "Speaker Identification (SID)",
+  "task_name": "Speaker Counting (SC)",
+  "variants": {
+    "en": {
+      "language": "English",
+      "source": "dou shi",
+      "video_folder": "dou_shi_part014",
+      "full_audio": {
+        "src": "bench_examples/audio/counting/en_full.mp3"
+      },
+      "audio": {
+        "a": {
+          "src": "bench_examples/audio/counting/en_ref_a.mp3",
+          "start": 0.0,
+          "end": 2.6,
+          "dur": 2.6,
+          "transcript": "You tell me. That is your handwriting, isn't it?",
+          "spk_id": "spk_01",
+          "spk_index": "spk_1"
+        }
+      },
+      "spk_a_transcript": "You tell me. That is your handwriting, isn't it?",
+      "spk_b_transcript": "Yes, that's my note.",
+      "qa": [
+        {
+          "question": "How many different speakers are there in this audio?",
+          "question_type": "speech_index",
+          "options": [
+            "A. 3 digits",
+            "B. 5 digits",
+            "C. 2 digits",
+            "D. Cannot determine (Insufficient information)"
+          ],
+          "answer": "C",
+          "answer_text": "2-bit",
+          "rationale": [
+            "wrong_speaker",
+            "hallucination",
+            "ground_truth",
+            "unknown"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/counting/en_full.mp3",
+              "start": null,
+              "end": null,
+              "dur": null,
+              "transcript": "",
+              "spk_id": null,
+              "spk_index": null,
+              "is_full": true
+            }
+          ]
+        },
+        {
+          "question": "How many different speakers are there in the audio between the 30th and 40th second?",
+          "question_type": "time_index",
+          "options": [
+            "A. 4-bit",
+            "B. 2 bits",
+            "C. Cannot determine (Insufficient information)",
+            "D. 3 people"
+          ],
+          "answer": "B",
+          "answer_text": "2 digits",
+          "rationale": [
+            "hallucination",
+            "ground_truth",
+            "unknown",
+            "wrong_speaker"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/counting/en_ref_a.mp3",
+              "start": 0.0,
+              "end": 2.6,
+              "dur": 2.6,
+              "transcript": "You tell me. That is your handwriting, isn't it?",
+              "spk_id": "spk_01",
+              "spk_index": "spk_1"
+            }
+          ]
+        }
+      ]
+    },
+    "zh": {
+      "language": "Chinese",
+      "source": "black mask 1996",
+      "video_folder": "black_mask_1996_part005",
+      "full_audio": {
+        "src": "bench_examples/audio/counting/zh_full.mp3"
+      },
+      "audio": {
+        "a": {
+          "src": "bench_examples/audio/counting/zh_ref_a.mp3",
+          "start": 0.0,
+          "end": 1.84,
+          "dur": 1.84,
+          "transcript": "这腿是我女儿的。",
+          "spk_id": "spk_10",
+          "spk_index": "spk_1"
+        }
+      },
+      "spk_a_transcript": "这腿是我女儿的。",
+      "spk_b_transcript": "小心一点。",
+      "qa": [
+        {
+          "question": "这段音频中一共出现了多少个不同的说话人？",
+          "question_type": "speech_index",
+          "options": [
+            "A. 4位",
+            "B. 无法判断（信息不足）",
+            "C. 5位",
+            "D. 10位"
+          ],
+          "answer": "C",
+          "answer_text": "5位",
+          "rationale": [
+            "wrong_speaker",
+            "unknown",
+            "ground_truth",
+            "hallucination"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/counting/zh_full.mp3",
+              "start": null,
+              "end": null,
+              "dur": null,
+              "transcript": "",
+              "spk_id": null,
+              "spk_index": null,
+              "is_full": true
+            }
+          ]
+        },
+        {
+          "question": "音频中在第 8 秒到第 19 秒这段时间内，一共出现了多少个不同的说话人？",
+          "question_type": "time_index",
+          "options": [
+            "A. 7位",
+            "B. 3位",
+            "C. 无法判断（信息不足）",
+            "D. 4位"
+          ],
+          "answer": "B",
+          "answer_text": "3位",
+          "rationale": [
+            "hallucination",
+            "ground_truth",
+            "unknown",
+            "wrong_speaker"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/counting/zh_ref_a.mp3",
+              "start": 0.0,
+              "end": 1.84,
+              "dur": 1.84,
+              "transcript": "这腿是我女儿的。",
+              "spk_id": "spk_10",
+              "spk_index": "spk_1"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

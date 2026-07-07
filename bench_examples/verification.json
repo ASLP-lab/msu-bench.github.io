@@ -1,0 +1,680 @@
+{
+  "task_id": "verification",
+  "level": "level1",
+  "dimension": "Speaker Identification (SID)",
+  "task_name": "Speaker Verification (SV)",
+  "variants": {
+    "en": {
+      "language": "English",
+      "source": "Seventh Son 2014 BluRay",
+      "video_folder": "Seventh.Son.2014.BluRay_part008",
+      "full_audio": {
+        "src": "bench_examples/audio/verification/en_full.mp3"
+      },
+      "audio": {
+        "a": {
+          "src": "bench_examples/audio/verification/en_ref_a.mp3",
+          "start": 22.16,
+          "end": 24.2,
+          "dur": 2.04,
+          "transcript": "You do not want to know.",
+          "spk_id": "spk_03",
+          "spk_index": "spk_1"
+        },
+        "b": {
+          "src": "bench_examples/audio/verification/en_ref_b.mp3",
+          "start": 29.73,
+          "end": 32.29,
+          "dur": 2.56,
+          "transcript": "The signs of evil are everywhere.",
+          "spk_id": "spk_05",
+          "spk_index": "spk_4"
+        }
+      },
+      "spk_a_transcript": "You do not want to know.",
+      "spk_b_transcript": "The signs of evil are everywhere.",
+      "qa": [
+        {
+          "question": "Are the speakers in the two audio clips below the same?",
+          "question_type": "no_index",
+          "options": [
+            "A. Yes, it is the same person.",
+            "B. No, not the same person",
+            "C. The two speakers' voices are partially similar, but it cannot be determined whether they are the same person.",
+            "D. Cannot be determined (insufficient information)"
+          ],
+          "answer": "B",
+          "answer_text": "No, they are not the same person.",
+          "rationale": [
+            "wrong_speaker",
+            "ground_truth",
+            "hallucination",
+            "unknown"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/verification/en_ref_a.mp3",
+              "start": 22.16,
+              "end": 24.2,
+              "dur": 2.04,
+              "transcript": "You do not want to know.",
+              "spk_id": "spk_03",
+              "spk_index": "spk_1"
+            },
+            {
+              "src": "bench_examples/audio/verification/en_ref_b.mp3",
+              "start": 29.73,
+              "end": 32.29,
+              "dur": 2.56,
+              "transcript": "The signs of evil are everywhere.",
+              "spk_id": "spk_05",
+              "spk_index": "spk_4"
+            }
+          ]
+        },
+        {
+          "question": "Are the speakers in the two audio clips below the same person?",
+          "question_type": "no_index",
+          "options": [
+            "A. No, they are not the same person.",
+            "B. Cannot determine (Insufficient information)",
+            "C. Yes, it is the same person.",
+            "D. The two speakers' voices are partially similar, but it cannot be determined whether they are the same person."
+          ],
+          "answer": "C",
+          "answer_text": "Yes, it's the same person.",
+          "rationale": [
+            "wrong_speaker",
+            "unknown",
+            "ground_truth",
+            "hallucination"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/verification/en_ref_a.mp3",
+              "start": 22.16,
+              "end": 24.2,
+              "dur": 2.04,
+              "transcript": "You do not want to know.",
+              "spk_id": "spk_03",
+              "spk_index": "spk_1"
+            },
+            {
+              "src": "bench_examples/audio/verification/en_ref_b.mp3",
+              "start": 29.73,
+              "end": 32.29,
+              "dur": 2.56,
+              "transcript": "The signs of evil are everywhere.",
+              "spk_id": "spk_05",
+              "spk_index": "spk_4"
+            }
+          ]
+        },
+        {
+          "question": "Is the speaker from 22.16s to 24.2s in the audio the same person as the speaker from 29.73s to 32.29s?",
+          "question_type": "time_index",
+          "options": [
+            "A. Cannot be determined (Insufficient information)",
+            "B. Yes, they are the same person.",
+            "C. The voices of the two speakers are partially similar, but it cannot be determined if they are the same person.",
+            "D. No, they are not the same person."
+          ],
+          "answer": "D",
+          "answer_text": "No, they are not the same person.",
+          "rationale": [
+            "unknown",
+            "wrong_speaker",
+            "hallucination",
+            "ground_truth"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/verification/en_ref_a.mp3",
+              "start": 22.16,
+              "end": 24.2,
+              "dur": 2.04,
+              "transcript": "You do not want to know.",
+              "spk_id": "spk_03",
+              "spk_index": "spk_1"
+            },
+            {
+              "src": "bench_examples/audio/verification/en_ref_b.mp3",
+              "start": 29.73,
+              "end": 32.29,
+              "dur": 2.56,
+              "transcript": "The signs of evil are everywhere.",
+              "spk_id": "spk_05",
+              "spk_index": "spk_4"
+            }
+          ]
+        },
+        {
+          "question": "Is the speaker from 22.16 to 24.2 seconds the same as the speaker from 43.62 to 46.26 seconds?",
+          "question_type": "time_index",
+          "options": [
+            "A. Yes, they are the same person.",
+            "B. No, not the same person",
+            "C. Cannot determine (insufficient information)",
+            "D. The two speakers' voices are partially similar, but it cannot be determined whether they are the same person."
+          ],
+          "answer": "A",
+          "answer_text": "Yes, it is the same person.",
+          "rationale": [
+            "ground_truth",
+            "wrong_speaker",
+            "unknown",
+            "hallucination"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/verification/en_ref_a.mp3",
+              "start": 22.16,
+              "end": 24.2,
+              "dur": 2.04,
+              "transcript": "You do not want to know.",
+              "spk_id": "spk_03",
+              "spk_index": "spk_1"
+            },
+            {
+              "src": "bench_examples/audio/verification/en_ref_b.mp3",
+              "start": 29.73,
+              "end": 32.29,
+              "dur": 2.56,
+              "transcript": "The signs of evil are everywhere.",
+              "spk_id": "spk_05",
+              "spk_index": "spk_4"
+            }
+          ]
+        },
+        {
+          "question": "Is the speaker who said ‘You do not want to know.’ the same as the speaker who said ‘The signs of evil are everywhere.’?",
+          "question_type": "transcript_index",
+          "options": [
+            "A. The two speakers' voices are partially similar, but it cannot be determined whether they are the same person.",
+            "B. Yes, it is the same person.",
+            "C. No, not the same person",
+            "D. Cannot determine (Insufficient information)"
+          ],
+          "answer": "C",
+          "answer_text": "No, they are not the same person.",
+          "rationale": [
+            "hallucination",
+            "wrong_speaker",
+            "ground_truth",
+            "unknown"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/verification/en_ref_a.mp3",
+              "start": 22.16,
+              "end": 24.2,
+              "dur": 2.04,
+              "transcript": "You do not want to know.",
+              "spk_id": "spk_03",
+              "spk_index": "spk_1"
+            },
+            {
+              "src": "bench_examples/audio/verification/en_ref_b.mp3",
+              "start": 29.73,
+              "end": 32.29,
+              "dur": 2.56,
+              "transcript": "The signs of evil are everywhere.",
+              "spk_id": "spk_05",
+              "spk_index": "spk_4"
+            }
+          ]
+        },
+        {
+          "question": "Is the speaker in the audio who said ‘You do not want to know.’ the same person as the speaker who said ‘Flattery is fine, gold is finer.’?",
+          "question_type": "transcript_index",
+          "options": [
+            "A. No, they are not the same person.",
+            "B. Cannot be determined (insufficient information)",
+            "C. The two speakers' voices are partially similar, but it cannot be determined if they are the same person.",
+            "D. Yes, it's the same person."
+          ],
+          "answer": "D",
+          "answer_text": "Yes, it is the same person.",
+          "rationale": [
+            "wrong_speaker",
+            "unknown",
+            "hallucination",
+            "ground_truth"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/verification/en_ref_a.mp3",
+              "start": 22.16,
+              "end": 24.2,
+              "dur": 2.04,
+              "transcript": "You do not want to know.",
+              "spk_id": "spk_03",
+              "spk_index": "spk_1"
+            },
+            {
+              "src": "bench_examples/audio/verification/en_ref_b.mp3",
+              "start": 29.73,
+              "end": 32.29,
+              "dur": 2.56,
+              "transcript": "The signs of evil are everywhere.",
+              "spk_id": "spk_05",
+              "spk_index": "spk_4"
+            }
+          ]
+        },
+        {
+          "question": "In the audio, is the speaker who said ‘You do not want to know.’ from 22.16 to 24.2 seconds the same speaker as the one who said ‘The signs of evil are everywhere.’ from 29.73 to 32.29 seconds?",
+          "question_type": "complex_index",
+          "options": [
+            "A. Yes, it is the same person.",
+            "B. No, they are not the same person.",
+            "C. Cannot be determined (insufficient information)",
+            "D. The two speakers' voices are partially similar, but it cannot be determined whether they are the same person."
+          ],
+          "answer": "B",
+          "answer_text": "No, they are not the same person.",
+          "rationale": [
+            "wrong_speaker",
+            "ground_truth",
+            "unknown",
+            "hallucination"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/verification/en_ref_a.mp3",
+              "start": 22.16,
+              "end": 24.2,
+              "dur": 2.04,
+              "transcript": "You do not want to know.",
+              "spk_id": "spk_03",
+              "spk_index": "spk_1"
+            },
+            {
+              "src": "bench_examples/audio/verification/en_ref_b.mp3",
+              "start": 29.73,
+              "end": 32.29,
+              "dur": 2.56,
+              "transcript": "The signs of evil are everywhere.",
+              "spk_id": "spk_05",
+              "spk_index": "spk_4"
+            }
+          ]
+        },
+        {
+          "question": "In the audio, are the speaker who said ‘You do not want to know.’ from 22.16 to 24.2 seconds and the speaker who said ‘Flattery is fine, gold is finer.’ from 43.62 to 46.26 seconds the same speaker?",
+          "question_type": "complex_index",
+          "options": [
+            "A. The two speakers' voices are partially similar, but it cannot be determined whether they are the same person.",
+            "B. Yes, they are the same person.",
+            "C. No, not the same person.",
+            "D. Cannot be determined (Insufficient information)"
+          ],
+          "answer": "B",
+          "answer_text": "Yes, it's the same person.",
+          "rationale": [
+            "hallucination",
+            "ground_truth",
+            "wrong_speaker",
+            "unknown"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/verification/en_ref_a.mp3",
+              "start": 22.16,
+              "end": 24.2,
+              "dur": 2.04,
+              "transcript": "You do not want to know.",
+              "spk_id": "spk_03",
+              "spk_index": "spk_1"
+            },
+            {
+              "src": "bench_examples/audio/verification/en_ref_b.mp3",
+              "start": 29.73,
+              "end": 32.29,
+              "dur": 2.56,
+              "transcript": "The signs of evil are everywhere.",
+              "spk_id": "spk_05",
+              "spk_index": "spk_4"
+            }
+          ]
+        }
+      ]
+    },
+    "zh": {
+      "language": "Chinese",
+      "source": "an se tang",
+      "video_folder": "an_se_tang_part013",
+      "full_audio": {
+        "src": "bench_examples/audio/verification/zh_full.mp3"
+      },
+      "audio": {
+        "a": {
+          "src": "bench_examples/audio/verification/zh_ref_a.mp3",
+          "start": 0.0,
+          "end": 5.08,
+          "dur": 5.08,
+          "transcript": "其实我们没有想那么多，我们所说所做的全都是有依据的。",
+          "spk_id": "spk_08",
+          "spk_index": "spk_1"
+        },
+        "b": {
+          "src": "bench_examples/audio/verification/zh_ref_b.mp3",
+          "start": 12.58,
+          "end": 14.86,
+          "dur": 2.28,
+          "transcript": "但是我真的没有非礼她，我记得那晚...",
+          "spk_id": "spk_07",
+          "spk_index": "spk_2"
+        }
+      },
+      "spk_a_transcript": "其实我们没有想那么多，我们所说所做的全都是有依据的。",
+      "spk_b_transcript": "但是我真的没有非礼她，我记得那晚...",
+      "qa": [
+        {
+          "question": "下面两条音频中的说话人是同一个说话人吗？",
+          "question_type": "no_index",
+          "options": [
+            "A. 否，不是同一个人",
+            "B. 是，同一个人",
+            "C. 两位说话人的音色部分相同",
+            "D. 无法判断（信息不足）"
+          ],
+          "answer": "A",
+          "answer_text": "否，不是同一个人",
+          "rationale": [
+            "ground_truth",
+            "wrong_speaker",
+            "hallucination",
+            "unknown"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/verification/zh_ref_a.mp3",
+              "start": 0.0,
+              "end": 5.08,
+              "dur": 5.08,
+              "transcript": "其实我们没有想那么多，我们所说所做的全都是有依据的。",
+              "spk_id": "spk_08",
+              "spk_index": "spk_1"
+            },
+            {
+              "src": "bench_examples/audio/verification/zh_ref_b.mp3",
+              "start": 12.58,
+              "end": 14.86,
+              "dur": 2.28,
+              "transcript": "但是我真的没有非礼她，我记得那晚...",
+              "spk_id": "spk_07",
+              "spk_index": "spk_2"
+            }
+          ]
+        },
+        {
+          "question": "下面两条音频中的说话人是同一个说话人吗？",
+          "question_type": "no_index",
+          "options": [
+            "A. 无法判断（信息不足）",
+            "B. 否，不是同一个人",
+            "C. 是，同一个人",
+            "D. 两位说话人的音色部分相同"
+          ],
+          "answer": "C",
+          "answer_text": "是，同一个人",
+          "rationale": [
+            "unknown",
+            "wrong_speaker",
+            "ground_truth",
+            "hallucination"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/verification/zh_ref_a.mp3",
+              "start": 0.0,
+              "end": 5.08,
+              "dur": 5.08,
+              "transcript": "其实我们没有想那么多，我们所说所做的全都是有依据的。",
+              "spk_id": "spk_08",
+              "spk_index": "spk_1"
+            },
+            {
+              "src": "bench_examples/audio/verification/zh_ref_b.mp3",
+              "start": 12.58,
+              "end": 14.86,
+              "dur": 2.28,
+              "transcript": "但是我真的没有非礼她，我记得那晚...",
+              "spk_id": "spk_07",
+              "spk_index": "spk_2"
+            }
+          ]
+        },
+        {
+          "question": "音频中第 0.0 秒到第 5.08 秒的说话人与第 12.58 秒到第 14.86 秒的说话人，是同一个说话人吗？",
+          "question_type": "time_index",
+          "options": [
+            "A. 是，同一个人",
+            "B. 两位说话人的音色部分相同",
+            "C. 否，不是同一个人",
+            "D. 无法判断（信息不足）"
+          ],
+          "answer": "C",
+          "answer_text": "否，不是同一个人",
+          "rationale": [
+            "wrong_speaker",
+            "hallucination",
+            "ground_truth",
+            "unknown"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/verification/zh_ref_a.mp3",
+              "start": 0.0,
+              "end": 5.08,
+              "dur": 5.08,
+              "transcript": "其实我们没有想那么多，我们所说所做的全都是有依据的。",
+              "spk_id": "spk_08",
+              "spk_index": "spk_1"
+            },
+            {
+              "src": "bench_examples/audio/verification/zh_ref_b.mp3",
+              "start": 12.58,
+              "end": 14.86,
+              "dur": 2.28,
+              "transcript": "但是我真的没有非礼她，我记得那晚...",
+              "spk_id": "spk_07",
+              "spk_index": "spk_2"
+            }
+          ]
+        },
+        {
+          "question": "音频中第 0.0 秒到第 5.08 秒的说话人与第 15.06 秒到第 18.18 秒的说话人，是同一个说话人吗？",
+          "question_type": "time_index",
+          "options": [
+            "A. 两位说话人的音色部分相同",
+            "B. 是，同一个人",
+            "C. 无法判断（信息不足）",
+            "D. 否，不是同一个人"
+          ],
+          "answer": "B",
+          "answer_text": "是，同一个人",
+          "rationale": [
+            "hallucination",
+            "ground_truth",
+            "unknown",
+            "wrong_speaker"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/verification/zh_ref_a.mp3",
+              "start": 0.0,
+              "end": 5.08,
+              "dur": 5.08,
+              "transcript": "其实我们没有想那么多，我们所说所做的全都是有依据的。",
+              "spk_id": "spk_08",
+              "spk_index": "spk_1"
+            },
+            {
+              "src": "bench_examples/audio/verification/zh_ref_b.mp3",
+              "start": 12.58,
+              "end": 14.86,
+              "dur": 2.28,
+              "transcript": "但是我真的没有非礼她，我记得那晚...",
+              "spk_id": "spk_07",
+              "spk_index": "spk_2"
+            }
+          ]
+        },
+        {
+          "question": "音频中说过‘其实我们没有想那么多，我们所说所做的全都是有依据的’的说话人与说过‘但是我真的没有非礼她，我记得那晚...’的说话人，是同一个说话人吗？",
+          "question_type": "transcript_index",
+          "options": [
+            "A. 是，同一个人",
+            "B. 否，不是同一个人",
+            "C. 无法判断（信息不足）",
+            "D. 两位说话人的音色部分相同"
+          ],
+          "answer": "B",
+          "answer_text": "否，不是同一个人",
+          "rationale": [
+            "wrong_speaker",
+            "ground_truth",
+            "unknown",
+            "hallucination"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/verification/zh_ref_a.mp3",
+              "start": 0.0,
+              "end": 5.08,
+              "dur": 5.08,
+              "transcript": "其实我们没有想那么多，我们所说所做的全都是有依据的。",
+              "spk_id": "spk_08",
+              "spk_index": "spk_1"
+            },
+            {
+              "src": "bench_examples/audio/verification/zh_ref_b.mp3",
+              "start": 12.58,
+              "end": 14.86,
+              "dur": 2.28,
+              "transcript": "但是我真的没有非礼她，我记得那晚...",
+              "spk_id": "spk_07",
+              "spk_index": "spk_2"
+            }
+          ]
+        },
+        {
+          "question": "音频中说过‘其实我们没有想那么多，我们所说所做的全都是有依据的’的说话人与说过‘等等，你先听我说完，你仔细听好’的说话人，是同一个说话人吗？",
+          "question_type": "transcript_index",
+          "options": [
+            "A. 否，不是同一个人",
+            "B. 无法判断（信息不足）",
+            "C. 是，同一个人",
+            "D. 两位说话人的音色部分相同"
+          ],
+          "answer": "C",
+          "answer_text": "是，同一个人",
+          "rationale": [
+            "wrong_speaker",
+            "unknown",
+            "ground_truth",
+            "hallucination"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/verification/zh_ref_a.mp3",
+              "start": 0.0,
+              "end": 5.08,
+              "dur": 5.08,
+              "transcript": "其实我们没有想那么多，我们所说所做的全都是有依据的。",
+              "spk_id": "spk_08",
+              "spk_index": "spk_1"
+            },
+            {
+              "src": "bench_examples/audio/verification/zh_ref_b.mp3",
+              "start": 12.58,
+              "end": 14.86,
+              "dur": 2.28,
+              "transcript": "但是我真的没有非礼她，我记得那晚...",
+              "spk_id": "spk_07",
+              "spk_index": "spk_2"
+            }
+          ]
+        },
+        {
+          "question": "音频中第 0.0 秒到第 5.08 秒说过‘其实我们没有想那么多，我们所说所做的全都是有依据的’的说话人与第 12.58 秒到第 14.86 秒说过‘但是我真的没有非礼她，我记得那晚...’的说话人，是同一个说话人吗？",
+          "question_type": "complex_index",
+          "options": [
+            "A. 无法判断（信息不足）",
+            "B. 否，不是同一个人",
+            "C. 两位说话人的音色部分相同",
+            "D. 是，同一个人"
+          ],
+          "answer": "B",
+          "answer_text": "否，不是同一个人",
+          "rationale": [
+            "unknown",
+            "ground_truth",
+            "hallucination",
+            "wrong_speaker"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/verification/zh_ref_a.mp3",
+              "start": 0.0,
+              "end": 5.08,
+              "dur": 5.08,
+              "transcript": "其实我们没有想那么多，我们所说所做的全都是有依据的。",
+              "spk_id": "spk_08",
+              "spk_index": "spk_1"
+            },
+            {
+              "src": "bench_examples/audio/verification/zh_ref_b.mp3",
+              "start": 12.58,
+              "end": 14.86,
+              "dur": 2.28,
+              "transcript": "但是我真的没有非礼她，我记得那晚...",
+              "spk_id": "spk_07",
+              "spk_index": "spk_2"
+            }
+          ]
+        },
+        {
+          "question": "音频中第 0.0 秒到第 5.08 秒说过‘其实我们没有想那么多，我们所说所做的全都是有依据的’的说话人与第 15.06 秒到第 18.18 秒说过‘等等，你先听我说完，你仔细听好’的说话人，是同一个说话人吗？",
+          "question_type": "complex_index",
+          "options": [
+            "A. 两位说话人的音色部分相同",
+            "B. 否，不是同一个人",
+            "C. 无法判断（信息不足）",
+            "D. 是，同一个人"
+          ],
+          "answer": "D",
+          "answer_text": "是，同一个人",
+          "rationale": [
+            "hallucination",
+            "wrong_speaker",
+            "unknown",
+            "ground_truth"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/verification/zh_ref_a.mp3",
+              "start": 0.0,
+              "end": 5.08,
+              "dur": 5.08,
+              "transcript": "其实我们没有想那么多，我们所说所做的全都是有依据的。",
+              "spk_id": "spk_08",
+              "spk_index": "spk_1"
+            },
+            {
+              "src": "bench_examples/audio/verification/zh_ref_b.mp3",
+              "start": 12.58,
+              "end": 14.86,
+              "dur": 2.28,
+              "transcript": "但是我真的没有非礼她，我记得那晚...",
+              "spk_id": "spk_07",
+              "spk_index": "spk_2"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

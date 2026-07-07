@@ -1,0 +1,228 @@
+{
+  "task_id": "retrieval",
+  "level": "level1",
+  "dimension": "Speaker Identification (SID)",
+  "task_name": "Speaker Retrieval (SR)",
+  "variants": {
+    "en": {
+      "language": "English",
+      "source": "Sicario 2015 2160p BluRay REMUX HEVC DTS-HD MA TrueHD 7 1 Atmos-FGT",
+      "video_folder": "Sicario.2015.2160p.BluRay.REMUX.HEVC.DTS-HD.MA.TrueHD.7.1.Atmos-FGT_part009",
+      "full_audio": {
+        "src": "bench_examples/audio/retrieval/en_full.mp3"
+      },
+      "audio": {
+        "a": {
+          "src": "bench_examples/audio/retrieval/en_ref_a.mp3",
+          "start": 13.3,
+          "end": 15.22,
+          "dur": 1.92,
+          "transcript": "Yeah, you gotta learn how to sleep on a plane.",
+          "spk_id": "spk_01",
+          "spk_index": "spk_1"
+        }
+      },
+      "spk_a_transcript": "Yeah, you gotta learn how to sleep on a plane.",
+      "spk_b_transcript": "They leave you on the base when you need a ride, don't they?",
+      "qa": [
+        {
+          "question": "The speaker in the audio from 13.3 seconds to 15.22 seconds is which speaker, by order of appearance, in the entire conversation? Speaker indexing starts from the first speaker.",
+          "question_type": "time_index",
+          "options": [
+            "A. the third speaker",
+            "B. the first speaker",
+            "C. Cannot determine (insufficient information to determine the speaker)",
+            "D. the seventh speaker"
+          ],
+          "answer": "B",
+          "answer_text": "the first speaker",
+          "rationale": [
+            "wrong_speaker",
+            "ground_truth",
+            "unknown",
+            "hallucination"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/retrieval/en_ref_a.mp3",
+              "start": 13.3,
+              "end": 15.22,
+              "dur": 1.92,
+              "transcript": "Yeah, you gotta learn how to sleep on a plane.",
+              "spk_id": "spk_01",
+              "spk_index": "spk_1"
+            }
+          ]
+        },
+        {
+          "question": "The speaker in the audio who said ‘Yeah, you gotta learn how to sleep on a plane.’ is which speaker by order of appearance in the entire dialogue? Speaker indexing starts from the first speaker.",
+          "question_type": "transcript_index",
+          "options": [
+            "A. Cannot be determined (Insufficient information to identify the speaker)",
+            "B. the third speaker",
+            "C. the seventh speaker",
+            "D. the first speaker"
+          ],
+          "answer": "D",
+          "answer_text": "the first speaker",
+          "rationale": [
+            "unknown",
+            "wrong_speaker",
+            "hallucination",
+            "ground_truth"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/retrieval/en_ref_a.mp3",
+              "start": 13.3,
+              "end": 15.22,
+              "dur": 1.92,
+              "transcript": "Yeah, you gotta learn how to sleep on a plane.",
+              "spk_id": "spk_01",
+              "spk_index": "spk_1"
+            }
+          ]
+        },
+        {
+          "question": "The male speaker in the audio who said ‘Yeah, you gotta learn how to sleep on a plane.’ from 13.3 seconds to 15.22 seconds, which speaker is he by order of appearance in the entire dialogue? Speaker indexing starts from the first speaker.",
+          "question_type": "complex_index",
+          "options": [
+            "A. the third speaker",
+            "B. Cannot be determined (Insufficient information to identify the speaker)",
+            "C. the first speaker",
+            "D. the eighth speaker"
+          ],
+          "answer": "C",
+          "answer_text": "the first speaker",
+          "rationale": [
+            "wrong_speaker",
+            "unknown",
+            "ground_truth",
+            "hallucination"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/retrieval/en_ref_a.mp3",
+              "start": 13.3,
+              "end": 15.22,
+              "dur": 1.92,
+              "transcript": "Yeah, you gotta learn how to sleep on a plane.",
+              "spk_id": "spk_01",
+              "spk_index": "spk_1"
+            }
+          ]
+        }
+      ]
+    },
+    "zh": {
+      "language": "Chinese",
+      "source": "border town 1984",
+      "video_folder": "border_town_1984_part014",
+      "full_audio": {
+        "src": "bench_examples/audio/retrieval/zh_full.mp3"
+      },
+      "audio": {
+        "a": {
+          "src": "bench_examples/audio/retrieval/zh_ref_a.mp3",
+          "start": 17.57,
+          "end": 22.13,
+          "dur": 4.56,
+          "transcript": "光包工就花了七百吊大钱呐，好碾坊啊！",
+          "spk_id": "spk_02",
+          "spk_index": "spk_2"
+        }
+      },
+      "spk_a_transcript": "光包工就花了七百吊大钱呐，好碾坊啊！",
+      "spk_b_transcript": "要是为我，我要好好想一想，过些日子再说吧。",
+      "qa": [
+        {
+          "question": "音频中在第 17.57 秒到第 22.13 秒的说话人，是整段对话中第几个出现的说话人？ 说话人序号从第一个说话人开始编号。",
+          "question_type": "time_index",
+          "options": [
+            "A. 第一个说话人",
+            "B. 第二个说话人",
+            "C. 第四个说话人",
+            "D. 无法判断（信息不足以确定说话人）"
+          ],
+          "answer": "B",
+          "answer_text": "第二个说话人",
+          "rationale": [
+            "wrong_speaker",
+            "ground_truth",
+            "hallucination",
+            "unknown"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/retrieval/zh_ref_a.mp3",
+              "start": 17.57,
+              "end": 22.13,
+              "dur": 4.56,
+              "transcript": "光包工就花了七百吊大钱呐，好碾坊啊！",
+              "spk_id": "spk_02",
+              "spk_index": "spk_2"
+            }
+          ]
+        },
+        {
+          "question": "音频中说过‘光包工就花了七百吊大钱呐，好碾坊啊！’的说话人，是整段对话中第几个出现的说话人？ 说话人序号从第一个说话人开始编号。",
+          "question_type": "transcript_index",
+          "options": [
+            "A. 第四个说话人",
+            "B. 第三个说话人",
+            "C. 无法判断（信息不足以确定说话人）",
+            "D. 第二个说话人"
+          ],
+          "answer": "D",
+          "answer_text": "第二个说话人",
+          "rationale": [
+            "hallucination",
+            "wrong_speaker",
+            "unknown",
+            "ground_truth"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/retrieval/zh_ref_a.mp3",
+              "start": 17.57,
+              "end": 22.13,
+              "dur": 4.56,
+              "transcript": "光包工就花了七百吊大钱呐，好碾坊啊！",
+              "spk_id": "spk_02",
+              "spk_index": "spk_2"
+            }
+          ]
+        },
+        {
+          "question": "音频中在第 17.57 秒到第 22.13 秒说过‘光包工就花了七百吊大钱呐，好碾坊啊！’的男性说话人，是整段对话中第几个出现的说话人？ 说话人序号从第一个说话人开始编号。",
+          "question_type": "complex_index",
+          "options": [
+            "A. 第二个说话人",
+            "B. 无法判断（信息不足以确定说话人）",
+            "C. 第三个说话人",
+            "D. 第四个说话人"
+          ],
+          "answer": "A",
+          "answer_text": "第二个说话人",
+          "rationale": [
+            "ground_truth",
+            "unknown",
+            "wrong_speaker",
+            "hallucination"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/retrieval/zh_ref_a.mp3",
+              "start": 17.57,
+              "end": 22.13,
+              "dur": 4.56,
+              "transcript": "光包工就花了七百吊大钱呐，好碾坊啊！",
+              "spk_id": "spk_02",
+              "spk_index": "spk_2"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

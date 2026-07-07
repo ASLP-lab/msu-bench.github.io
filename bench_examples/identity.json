@@ -1,0 +1,316 @@
+{
+  "task_id": "identity",
+  "level": "level2",
+  "dimension": "Dialogue Scene Reasoning (DSR)",
+  "task_name": "Role/Identity Identification (RII)",
+  "variants": {
+    "en": {
+      "language": "English",
+      "source": "Green Book 2018 1080p BluRay x264 AC3 • CHAOSPACE",
+      "video_folder": "Green_Book_2018_1080p_BluRay_x264_AC3_•_CHAOSPACE_part005",
+      "full_audio": {
+        "src": "bench_examples/audio/identity/en_full.mp3"
+      },
+      "audio": {
+        "a": {
+          "src": "bench_examples/audio/identity/en_ref_a.mp3",
+          "start": 26.31,
+          "end": 27.43,
+          "dur": 1.12,
+          "transcript": "How you gonna press your pants?",
+          "spk_id": "spk_06",
+          "spk_index": "spk_1"
+        }
+      },
+      "spk_a_transcript": "How you gonna press your pants?",
+      "spk_b_transcript": "I'll put 'em under the mattress.",
+      "qa": [
+        {
+          "question": "Based on the entire conversation, what is the relationship between the two speakers in the following audio? Please choose the most suitable option.",
+          "question_type": "no_index",
+          "options": [
+            "A. brother and sister",
+            "B. Colleague",
+            "C. Husband and wife",
+            "D. Cannot be determined (Insufficient evidence)"
+          ],
+          "answer": "C",
+          "answer_text": "Husband and wife",
+          "rationale": [
+            "hallucination",
+            "wrong_speaker",
+            "ground_truth",
+            "unknown"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/identity/en_ref_a.mp3",
+              "start": 26.31,
+              "end": 27.43,
+              "dur": 1.12,
+              "transcript": "How you gonna press your pants?",
+              "spk_id": "spk_06",
+              "spk_index": "spk_1"
+            }
+          ]
+        },
+        {
+          "question": "What is the relationship in the entire conversation between the speaker who talks from 26.31s to 27.43s and the speaker who talks from 27.51s to 28.87s in the audio? Please select the most appropriate option.",
+          "question_type": "time_index",
+          "options": [
+            "A. Husband and wife",
+            "B. Brother and sister",
+            "C. Colleague",
+            "D. Cannot be determined (Insufficient evidence)"
+          ],
+          "answer": "A",
+          "answer_text": "Husband and wife",
+          "rationale": [
+            "ground_truth",
+            "hallucination",
+            "wrong_speaker",
+            "unknown"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/identity/en_ref_a.mp3",
+              "start": 26.31,
+              "end": 27.43,
+              "dur": 1.12,
+              "transcript": "How you gonna press your pants?",
+              "spk_id": "spk_06",
+              "spk_index": "spk_1"
+            }
+          ]
+        },
+        {
+          "question": "What is the relationship in the entire conversation between the speaker who said ‘How you gonna press your pants?’ and the speaker who said ‘I'll put 'em under the mattress.’? Please choose the best option.",
+          "question_type": "transcript_index",
+          "options": [
+            "A. Colleague",
+            "B. Cannot determine (insufficient evidence)",
+            "C. Brother and sister",
+            "D. Husband and wife"
+          ],
+          "answer": "D",
+          "answer_text": "husband and wife",
+          "rationale": [
+            "wrong_speaker",
+            "unknown",
+            "hallucination",
+            "ground_truth"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/identity/en_ref_a.mp3",
+              "start": 26.31,
+              "end": 27.43,
+              "dur": 1.12,
+              "transcript": "How you gonna press your pants?",
+              "spk_id": "spk_06",
+              "spk_index": "spk_1"
+            }
+          ]
+        },
+        {
+          "question": "What is the relationship between the first speaker and the second speaker in the entire conversation? Please choose the option that best fits. Speaker indexing starts from the first speaker.",
+          "question_type": "speaker_index",
+          "options": [
+            "A. Brother and sister",
+            "B. Husband and wife",
+            "C. Colleague",
+            "D. Cannot be determined (Insufficient evidence)"
+          ],
+          "answer": "B",
+          "answer_text": "Husband and wife",
+          "rationale": [
+            "hallucination",
+            "ground_truth",
+            "wrong_speaker",
+            "unknown"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/identity/en_full.mp3",
+              "start": null,
+              "end": null,
+              "dur": null,
+              "transcript": "",
+              "spk_id": null,
+              "spk_index": null,
+              "is_full": true
+            }
+          ]
+        },
+        {
+          "question": "In the audio, what is the relationship in the entire conversation between the speaker who said ‘How you gonna press your pants?’ from 26.31 to 27.43 seconds and the speaker who said ‘I'll put 'em under the mattress.’ from 27.51 to 28.87 seconds? Please choose the most suitable option.",
+          "question_type": "complex_index",
+          "options": [
+            "A. Husband and wife",
+            "B. Brother and sister",
+            "C. Colleague",
+            "D. Cannot determine (insufficient evidence)"
+          ],
+          "answer": "A",
+          "answer_text": "Husband and wife",
+          "rationale": [
+            "ground_truth",
+            "hallucination",
+            "wrong_speaker",
+            "unknown"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/identity/en_ref_a.mp3",
+              "start": 26.31,
+              "end": 27.43,
+              "dur": 1.12,
+              "transcript": "How you gonna press your pants?",
+              "spk_id": "spk_06",
+              "spk_index": "spk_1"
+            }
+          ]
+        }
+      ]
+    },
+    "zh": {
+      "language": "Chinese",
+      "source": "beginning of great revival 2011",
+      "video_folder": "beginning_of_great_revival_2011_part011",
+      "full_audio": {
+        "src": "bench_examples/audio/identity/zh_full.mp3"
+      },
+      "audio": {
+        "a": {
+          "src": "bench_examples/audio/identity/zh_ref_a.mp3",
+          "start": 53.47,
+          "end": 57.47,
+          "dur": 4.0,
+          "transcript": "图书馆缺个助理员，很辛苦的，干得了吗？",
+          "spk_id": "spk_04",
+          "spk_index": "spk_4"
+        }
+      },
+      "spk_a_transcript": "图书馆缺个助理员，很辛苦的，干得了吗？",
+      "spk_b_transcript": "行行，白天黑夜我都可以做事情的。",
+      "qa": [
+        {
+          "question": "下面音频中的两个说话人，从整段对话来看，他们之间的关系是什么？请选择最符合的一项。",
+          "question_type": "no_index",
+          "options": [
+            "A. 同事",
+            "B. 招聘者—应聘者",
+            "C. 师生",
+            "D. 无法判断（证据不足）"
+          ],
+          "answer": "B",
+          "answer_text": "招聘者—应聘者",
+          "rationale": [
+            "hallucination",
+            "ground_truth",
+            "wrong_speaker",
+            "unknown"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/identity/zh_ref_a.mp3",
+              "start": 53.47,
+              "end": 57.47,
+              "dur": 4.0,
+              "transcript": "图书馆缺个助理员，很辛苦的，干得了吗？",
+              "spk_id": "spk_04",
+              "spk_index": "spk_4"
+            }
+          ]
+        },
+        {
+          "question": "音频中第 53.47 秒到第 57.47 秒讲话的说话人以及在第 57.63 秒到第 60.83 秒讲话的说话人在整段对话中的关系是什么？请选择最符合的一项。",
+          "question_type": "time_index",
+          "options": [
+            "A. 招聘者—应聘者",
+            "B. 师生",
+            "C. 同事",
+            "D. 无法判断（证据不足）"
+          ],
+          "answer": "A",
+          "answer_text": "招聘者—应聘者",
+          "rationale": [
+            "ground_truth",
+            "wrong_speaker",
+            "hallucination",
+            "unknown"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/identity/zh_ref_a.mp3",
+              "start": 53.47,
+              "end": 57.47,
+              "dur": 4.0,
+              "transcript": "图书馆缺个助理员，很辛苦的，干得了吗？",
+              "spk_id": "spk_04",
+              "spk_index": "spk_4"
+            }
+          ]
+        },
+        {
+          "question": "音频中说过‘图书馆缺个助理员’的说话人以及说过‘白天黑夜我都可以做事情的’的说话人在整段对话中的关系是什么？请选择最符合的一项。",
+          "question_type": "transcript_index",
+          "options": [
+            "A. 师生",
+            "B. 招聘者—应聘者",
+            "C. 无法判断（证据不足）",
+            "D. 同事"
+          ],
+          "answer": "B",
+          "answer_text": "招聘者—应聘者",
+          "rationale": [
+            "wrong_speaker",
+            "ground_truth",
+            "unknown",
+            "hallucination"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/identity/zh_ref_a.mp3",
+              "start": 53.47,
+              "end": 57.47,
+              "dur": 4.0,
+              "transcript": "图书馆缺个助理员，很辛苦的，干得了吗？",
+              "spk_id": "spk_04",
+              "spk_index": "spk_4"
+            }
+          ]
+        },
+        {
+          "question": "音频中第 53.47 秒到第 57.47 秒说过‘很辛苦的，干得了吗？’的说话人与第 57.63 秒到第 60.83 秒说过‘行行，白天黑夜我都可以做事情的’的说话人在整段对话中的关系是什么？请选择最符合的一项。",
+          "question_type": "complex_index",
+          "options": [
+            "A. 无法判断（证据不足）",
+            "B. 师生",
+            "C. 同事",
+            "D. 招聘者—应聘者"
+          ],
+          "answer": "D",
+          "answer_text": "招聘者—应聘者",
+          "rationale": [
+            "unknown",
+            "wrong_speaker",
+            "hallucination",
+            "ground_truth"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/identity/zh_ref_a.mp3",
+              "start": 53.47,
+              "end": 57.47,
+              "dur": 4.0,
+              "transcript": "图书馆缺个助理员，很辛苦的，干得了吗？",
+              "spk_id": "spk_04",
+              "spk_index": "spk_4"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

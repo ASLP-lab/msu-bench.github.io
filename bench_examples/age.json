@@ -1,0 +1,466 @@
+{
+  "task_id": "age",
+  "level": "level1",
+  "dimension": "Speaker Attribute Recognition (SAR)",
+  "task_name": "Age Recognition (AR)",
+  "variants": {
+    "en": {
+      "language": "English",
+      "source": "Mission Impossible Rogue Nation 2015 PROPER 2160p BluRay REMUX HEVC DTS-HD MA TrueHD 7 1 Atmos-HDHIVE",
+      "video_folder": "Mission.Impossible.Rogue.Nation.2015.PROPER.2160p.BluRay.REMUX.HEVC.DTS-HD.MA.TrueHD.7.1.Atmos-HDHIVE_part005",
+      "full_audio": {
+        "src": "bench_examples/audio/age/en_full.mp3"
+      },
+      "audio": {
+        "a": {
+          "src": "bench_examples/audio/age/en_ref_a.mp3",
+          "start": 14.73,
+          "end": 16.49,
+          "dur": 1.76,
+          "transcript": "Has Ethan Hunt contacted you?",
+          "spk_id": "spk_07",
+          "spk_index": "spk_3"
+        }
+      },
+      "spk_a_transcript": "Has Ethan Hunt contacted you?",
+      "spk_b_transcript": "I know, and I'm gonna answer truthfully, and then you're gonna ask me to lie intentionally.",
+      "qa": [
+        {
+          "question": "In the following solo audio, the age range of speaker <spk_a> is closest to which of the following?",
+          "question_type": "no_index",
+          "options": [
+            "A. Elderly (60 years or older)",
+            "B. Middle-aged (30-59 years old)",
+            "C. Cannot be determined (Insufficient information to determine the age group)",
+            "D. Young people (18-29 years old)"
+          ],
+          "answer": "B",
+          "answer_text": "Middle-aged adults (30-59 years old)",
+          "rationale": [
+            "hallucination",
+            "ground_truth",
+            "unknown",
+            "wrong_speaker"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/age/en_ref_a.mp3",
+              "start": 14.73,
+              "end": 16.49,
+              "dur": 1.76,
+              "transcript": "Has Ethan Hunt contacted you?",
+              "spk_id": "spk_07",
+              "spk_index": "spk_3"
+            }
+          ]
+        },
+        {
+          "question": "Which of the following is closest to the age range of speaker <spk_a> in the audio from 14.73s to 16.49s?",
+          "question_type": "time_index",
+          "options": [
+            "A. Middle-aged adults (30-59 years old)",
+            "B. Young adults (18-29 years old)",
+            "C. Elderly (60 years and over)",
+            "D. Unable to determine (Insufficient information to determine the age group)"
+          ],
+          "answer": "A",
+          "answer_text": "Middle-aged adults (30-59 years old)",
+          "rationale": [
+            "ground_truth",
+            "wrong_speaker",
+            "hallucination",
+            "unknown"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/age/en_ref_a.mp3",
+              "start": 14.73,
+              "end": 16.49,
+              "dur": 1.76,
+              "transcript": "Has Ethan Hunt contacted you?",
+              "spk_id": "spk_07",
+              "spk_index": "spk_3"
+            }
+          ]
+        },
+        {
+          "question": "The age range of the speaker <spk_a> in the audio who said ‘Has Ethan Hunt contacted you?’ is closest to which of the following?",
+          "question_type": "transcript_index",
+          "options": [
+            "A. Young adults (18-29 years old)",
+            "B. Middle-aged (30-59 years old)",
+            "C. Cannot determine (Insufficient information to determine the age group)",
+            "D. Seniors (age 60 and over)"
+          ],
+          "answer": "B",
+          "answer_text": "Middle-aged adults (30-59 years old)",
+          "rationale": [
+            "wrong_speaker",
+            "ground_truth",
+            "unknown",
+            "hallucination"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/age/en_ref_a.mp3",
+              "start": 14.73,
+              "end": 16.49,
+              "dur": 1.76,
+              "transcript": "Has Ethan Hunt contacted you?",
+              "spk_id": "spk_07",
+              "spk_index": "spk_3"
+            }
+          ]
+        },
+        {
+          "question": "In the entire dialogue, the age group of the third speaker is closest to which of the following? Speaker indexing starts from the first speaker.",
+          "question_type": "speaker_index",
+          "options": [
+            "A. Young adults (18-29 years old)",
+            "B. Cannot be determined (Insufficient information to determine the age group)",
+            "C. Middle-aged (30-59 years old)",
+            "D. Adolescent (13-17 years old)"
+          ],
+          "answer": "C",
+          "answer_text": "Middle-aged (30-59 years old)",
+          "rationale": [
+            "wrong_speaker",
+            "unknown",
+            "ground_truth",
+            "hallucination"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/age/en_full.mp3",
+              "start": null,
+              "end": null,
+              "dur": null,
+              "transcript": "",
+              "spk_id": null,
+              "spk_index": null,
+              "is_full": true
+            }
+          ]
+        },
+        {
+          "question": "The age range of the male speaker <spk_a> who said ‘Has Ethan Hunt contacted you?’ from 14.73s to 16.49s is closest to which of the following?",
+          "question_type": "complex_index",
+          "options": [
+            "A. Cannot be determined (Insufficient information to determine the age group)",
+            "B. Young people (18-29 years old)",
+            "C. Seniors (60 years and over)",
+            "D. Middle-aged (30-59 years old)"
+          ],
+          "answer": "D",
+          "answer_text": "Middle-aged people (30-59 years old)",
+          "rationale": [
+            "unknown",
+            "wrong_speaker",
+            "hallucination",
+            "ground_truth"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/age/en_ref_a.mp3",
+              "start": 14.73,
+              "end": 16.49,
+              "dur": 1.76,
+              "transcript": "Has Ethan Hunt contacted you?",
+              "spk_id": "spk_07",
+              "spk_index": "spk_3"
+            }
+          ]
+        },
+        {
+          "question": "In the entire audio, which speakers are Young Adults (18-29 years old)? (Answer using the global speaker order) Please select the best-fitting option. Speaker indexing starts from the first speaker.",
+          "question_type": "reverse_retrival",
+          "options": [
+            "A. the first and second speakers",
+            "B. Cannot be determined (Insufficient information to determine the age group)",
+            "C. the second speaker",
+            "D. the first and third speakers"
+          ],
+          "answer": "A",
+          "answer_text": "the first and second speakers",
+          "rationale": [
+            "ground_truth",
+            "unknown",
+            "wrong_speaker",
+            "wrong_speaker"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/age/en_full.mp3",
+              "start": null,
+              "end": null,
+              "dur": null,
+              "transcript": "",
+              "spk_id": null,
+              "spk_index": null,
+              "is_full": true
+            }
+          ]
+        },
+        {
+          "question": "How many speakers are there in the young adult (18-29 years old) age group in the entire audio? Please select the most appropriate option.",
+          "question_type": "reverse_count",
+          "options": [
+            "A. 1",
+            "B. 3",
+            "C. Unable to determine (Insufficient information to determine the age group)",
+            "D. 2"
+          ],
+          "answer": "D",
+          "answer_text": "2",
+          "rationale": [
+            "wrong_speaker",
+            "wrong_speaker",
+            "unknown",
+            "ground_truth"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/age/en_full.mp3",
+              "start": null,
+              "end": null,
+              "dur": null,
+              "transcript": "",
+              "spk_id": null,
+              "spk_index": null,
+              "is_full": true
+            }
+          ]
+        }
+      ]
+    },
+    "zh": {
+      "language": "Chinese",
+      "source": "teahouse 2010 s1e09",
+      "video_folder": "teahouse_2010_s1e09_part005",
+      "full_audio": {
+        "src": "bench_examples/audio/age/zh_full.mp3"
+      },
+      "audio": {
+        "a": {
+          "src": "bench_examples/audio/age/zh_ref_a.mp3",
+          "start": 36.92,
+          "end": 43.12,
+          "dur": 6.2,
+          "transcript": "得了得了得了，我问你，你是不是拿人唐铁嘴一翠扳指？",
+          "spk_id": "spk_06",
+          "spk_index": "spk_1"
+        }
+      },
+      "spk_a_transcript": "得了得了得了，我问你，你是不是拿人唐铁嘴一翠扳指？",
+      "spk_b_transcript": "哎哎，干嘛打人呢？",
+      "qa": [
+        {
+          "question": "下面单人讲话音频中，说话人的年龄段最接近以下哪一项？",
+          "question_type": "no_index",
+          "options": [
+            "A. 中年人 (30-59岁)",
+            "B. 青年人 (18-29岁)",
+            "C. 老年人 (60岁以上)",
+            "D. 无法判断（信息不足以确定年龄段）"
+          ],
+          "answer": "A",
+          "answer_text": "中年人 (30-59岁)",
+          "rationale": [
+            "ground_truth",
+            "wrong_speaker",
+            "hallucination",
+            "unknown"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/age/zh_ref_a.mp3",
+              "start": 36.92,
+              "end": 43.12,
+              "dur": 6.2,
+              "transcript": "得了得了得了，我问你，你是不是拿人唐铁嘴一翠扳指？",
+              "spk_id": "spk_06",
+              "spk_index": "spk_1"
+            }
+          ]
+        },
+        {
+          "question": "音频中在第 36.92 秒到第 43.12 秒的说话人 的年龄段最接近以下哪一项？",
+          "question_type": "time_index",
+          "options": [
+            "A. 青年人 (18-29岁)",
+            "B. 中年人 (30-59岁)",
+            "C. 老年人 (60岁以上)",
+            "D. 无法判断（信息不足以确定年龄段）"
+          ],
+          "answer": "B",
+          "answer_text": "中年人 (30-59岁)",
+          "rationale": [
+            "wrong_speaker",
+            "ground_truth",
+            "hallucination",
+            "unknown"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/age/zh_ref_a.mp3",
+              "start": 36.92,
+              "end": 43.12,
+              "dur": 6.2,
+              "transcript": "得了得了得了，我问你，你是不是拿人唐铁嘴一翠扳指？",
+              "spk_id": "spk_06",
+              "spk_index": "spk_1"
+            }
+          ]
+        },
+        {
+          "question": "音频中说过‘你是不是拿人唐铁嘴一翠扳指’的说话人 的年龄段最接近以下哪一项？",
+          "question_type": "transcript_index",
+          "options": [
+            "A. 青年人 (18-29岁)",
+            "B. 老年人 (60岁以上)",
+            "C. 中年人 (30-59岁)",
+            "D. 无法判断（信息不足以确定年龄段）"
+          ],
+          "answer": "C",
+          "answer_text": "中年人 (30-59岁)",
+          "rationale": [
+            "wrong_speaker",
+            "hallucination",
+            "ground_truth",
+            "unknown"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/age/zh_ref_a.mp3",
+              "start": 36.92,
+              "end": 43.12,
+              "dur": 6.2,
+              "transcript": "得了得了得了，我问你，你是不是拿人唐铁嘴一翠扳指？",
+              "spk_id": "spk_06",
+              "spk_index": "spk_1"
+            }
+          ]
+        },
+        {
+          "question": "在整段对话中，第一个说话人的年龄段最接近以下哪一项？ 说话人序号从第一个说话人开始编号。",
+          "question_type": "speaker_index",
+          "options": [
+            "A. 中年人 (30-59岁)",
+            "B. 青年人 (18-29岁)",
+            "C. 青少年 (13-17岁)",
+            "D. 无法判断（信息不足以确定年龄段）"
+          ],
+          "answer": "A",
+          "answer_text": "中年人 (30-59岁)",
+          "rationale": [
+            "ground_truth",
+            "wrong_speaker",
+            "hallucination",
+            "unknown"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/age/zh_full.mp3",
+              "start": null,
+              "end": null,
+              "dur": null,
+              "transcript": "",
+              "spk_id": null,
+              "spk_index": null,
+              "is_full": true
+            }
+          ]
+        },
+        {
+          "question": "在第 36.92 秒到第 43.12 秒说过‘你是不是拿人唐铁嘴一翠扳指’的男性说话人，其年龄段最接近以下哪一项？",
+          "question_type": "complex_index",
+          "options": [
+            "A. 无法判断（信息不足以确定年龄段）",
+            "B. 青年人 (18-29岁)",
+            "C. 老年人 (60岁以上)",
+            "D. 中年人 (30-59岁)"
+          ],
+          "answer": "D",
+          "answer_text": "中年人 (30-59岁)",
+          "rationale": [
+            "unknown",
+            "wrong_speaker",
+            "hallucination",
+            "ground_truth"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/age/zh_ref_a.mp3",
+              "start": 36.92,
+              "end": 43.12,
+              "dur": 6.2,
+              "transcript": "得了得了得了，我问你，你是不是拿人唐铁嘴一翠扳指？",
+              "spk_id": "spk_06",
+              "spk_index": "spk_1"
+            }
+          ]
+        },
+        {
+          "question": "在整段音频中，年龄段为 青年人 (18-29岁) 的说话人有哪些？（用 全局说话人顺序 作答）请选择最符合的一项。 说话人序号从第一个说话人开始编号。",
+          "question_type": "reverse_retrival",
+          "options": [
+            "A. 第一个说话人",
+            "B. 第三个说话人",
+            "C. 第一个说话人、第三个说话人",
+            "D. 无法判断（信息不足以确定年龄段）"
+          ],
+          "answer": "B",
+          "answer_text": "第三个说话人",
+          "rationale": [
+            "wrong_speaker",
+            "ground_truth",
+            "hallucination",
+            "unknown"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/age/zh_full.mp3",
+              "start": null,
+              "end": null,
+              "dur": null,
+              "transcript": "",
+              "spk_id": null,
+              "spk_index": null,
+              "is_full": true
+            }
+          ]
+        },
+        {
+          "question": "在整段音频中，年龄段为 中年人 (30-59岁) 的说话人一共有几个？请选择最符合的一项。",
+          "question_type": "reverse_count",
+          "options": [
+            "A. 1 个",
+            "B. 4 个",
+            "C. 3 个",
+            "D. 无法判断（信息不足以确定年龄段）"
+          ],
+          "answer": "C",
+          "answer_text": "3 个",
+          "rationale": [
+            "hallucination",
+            "wrong_speaker",
+            "ground_truth",
+            "unknown"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/age/zh_full.mp3",
+              "start": null,
+              "end": null,
+              "dur": null,
+              "transcript": "",
+              "spk_id": null,
+              "spk_index": null,
+              "is_full": true
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

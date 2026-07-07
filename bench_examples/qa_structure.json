@@ -1,0 +1,286 @@
+{
+  "task_id": "qa_structure",
+  "level": "level2",
+  "dimension": "Dialogue Structure Analysis (DSA)",
+  "task_name": "Q&A Structure ID (QASI)",
+  "variants": {
+    "en": {
+      "language": "English",
+      "source": "robin hood origins",
+      "video_folder": "robin_hood_origins_part003",
+      "full_audio": {
+        "src": "bench_examples/audio/qa_structure/en_full.mp3"
+      },
+      "audio": {
+        "a": {
+          "src": "bench_examples/audio/qa_structure/en_ref_a.mp3",
+          "start": 28.98,
+          "end": 29.42,
+          "dur": 0.44,
+          "transcript": "What are you doing?",
+          "spk_id": "spk_04",
+          "spk_index": "spk_4"
+        }
+      },
+      "spk_a_transcript": "What are you doing?",
+      "spk_b_transcript": "My duty, Loxley.",
+      "qa": [
+        {
+          "question": "The following is a monologue from a speaker. The most likely response to it in a complete dialogue is:",
+          "question_type": "no_index",
+          "options": [
+            "A. Speaker B: I've been killing crusaders all my life.",
+            "B. Speaker B: I'm just following the king's decree.",
+            "C. Cannot determine (Insufficient information to provide a specific response)",
+            "D. Speaker B: My duty, Loxley."
+          ],
+          "answer": "D",
+          "answer_text": "My duty, Loxley.",
+          "rationale": [
+            "wrong_speaker",
+            "hallucination",
+            "unknown",
+            "ground_truth"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/qa_structure/en_ref_a.mp3",
+              "start": 28.98,
+              "end": 29.42,
+              "dur": 0.44,
+              "transcript": "What are you doing?",
+              "spk_id": "spk_04",
+              "spk_index": "spk_4"
+            }
+          ]
+        },
+        {
+          "question": "According to the conversation, the reply from other people to what a speaker said from 28.98 to 29.42 seconds is:",
+          "question_type": "time_index",
+          "options": [
+            "A. Speaker B: I've been killing crusaders all my life.",
+            "B. Speaker B: I'm just following the king's decree.",
+            "C. Unable to judge (insufficient information to provide a targeted response)",
+            "D. Speaker B: My duty, Loxley."
+          ],
+          "answer": "D",
+          "answer_text": "My duty, Loxley.",
+          "rationale": [
+            "wrong_speaker",
+            "hallucination",
+            "unknown",
+            "ground_truth"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/qa_structure/en_ref_a.mp3",
+              "start": 28.98,
+              "end": 29.42,
+              "dur": 0.44,
+              "transcript": "What are you doing?",
+              "spk_id": "spk_04",
+              "spk_index": "spk_4"
+            }
+          ]
+        },
+        {
+          "question": "Based on the dialogue, the reply from others to a speaker's question 'What are you doing?' is:",
+          "question_type": "transcript_index",
+          "options": [
+            "A. Speaker B: I've been killing crusaders all my life.",
+            "B. Speaker B: I'm just following the king's decree.",
+            "C. Cannot determine (Insufficient information to identify the response)",
+            "D. Speaker B: My duty, Loxley."
+          ],
+          "answer": "D",
+          "answer_text": "My duty, Loxley.",
+          "rationale": [
+            "wrong_speaker",
+            "hallucination",
+            "unknown",
+            "ground_truth"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/qa_structure/en_ref_a.mp3",
+              "start": 28.98,
+              "end": 29.42,
+              "dur": 0.44,
+              "transcript": "What are you doing?",
+              "spk_id": "spk_04",
+              "spk_index": "spk_4"
+            }
+          ]
+        },
+        {
+          "question": "According to the dialogue, the other people's response to the speaker's utterance of 'What are you doing?' between 28.98 and 29.42 seconds is:",
+          "question_type": "complex_index",
+          "options": [
+            "A. Speaker B: I've been killing crusaders all my life.",
+            "B. Speaker B: I'm just following the king's decree.",
+            "C. Cannot determine (Insufficient information to provide a response)",
+            "D. Speaker B: My duty, Loxley."
+          ],
+          "answer": "D",
+          "answer_text": "My duty, Loxley.",
+          "rationale": [
+            "wrong_speaker",
+            "hallucination",
+            "unknown",
+            "ground_truth"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/qa_structure/en_ref_a.mp3",
+              "start": 28.98,
+              "end": 29.42,
+              "dur": 0.44,
+              "transcript": "What are you doing?",
+              "spk_id": "spk_04",
+              "spk_index": "spk_4"
+            }
+          ]
+        }
+      ]
+    },
+    "zh": {
+      "language": "Chinese",
+      "source": "yang guifei ep08",
+      "video_folder": "yang_guifei_ep08_part001",
+      "full_audio": {
+        "src": "bench_examples/audio/qa_structure/zh_full.mp3"
+      },
+      "audio": {
+        "a": {
+          "src": "bench_examples/audio/qa_structure/zh_ref_a.mp3",
+          "start": 13.05,
+          "end": 14.73,
+          "dur": 1.68,
+          "transcript": "陛下，请息怒。",
+          "spk_id": "spk_14",
+          "spk_index": "spk_2"
+        }
+      },
+      "spk_a_transcript": "陛下，请息怒。",
+      "spk_b_transcript": "点样息怒？",
+      "qa": [
+        {
+          "question": "下面是某个说话人的单讲片段，在完整对话中最可能对该语音回应的一项是：",
+          "question_type": "no_index",
+          "options": [
+            "A. 说话人B：点样息怒？",
+            "B. 说话人B：你叫朕点样息怒？国事家事一团糟。",
+            "C. 说话人B：都要恁办法 㗎 嘛。",
+            "D. 无法判断（信息不足以定位回复）"
+          ],
+          "answer": "A",
+          "answer_text": "说话人B：点样息怒？",
+          "rationale": [
+            "ground_truth",
+            "hallucination",
+            "wrong_speaker",
+            "unknown"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/qa_structure/zh_ref_a.mp3",
+              "start": 13.05,
+              "end": 14.73,
+              "dur": 1.68,
+              "transcript": "陛下，请息怒。",
+              "spk_id": "spk_14",
+              "spk_index": "spk_2"
+            }
+          ]
+        },
+        {
+          "question": "根据对话内容，其他人对某个说话人在第 13.05 秒到第 14.73 秒的讲话内容回复的语句是：",
+          "question_type": "time_index",
+          "options": [
+            "A. 说话人B：都要恁办法 㗎 嘛。",
+            "B. 无法判断（信息不足以定位回复）",
+            "C. 说话人B：点样息怒？",
+            "D. 说话人B：你叫朕点样息怒？国事家事一团糟。"
+          ],
+          "answer": "C",
+          "answer_text": "说话人B：点样息怒？",
+          "rationale": [
+            "wrong_speaker",
+            "unknown",
+            "ground_truth",
+            "hallucination"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/qa_structure/zh_ref_a.mp3",
+              "start": 13.05,
+              "end": 14.73,
+              "dur": 1.68,
+              "transcript": "陛下，请息怒。",
+              "spk_id": "spk_14",
+              "spk_index": "spk_2"
+            }
+          ]
+        },
+        {
+          "question": "根据对话内容，其他人对某个说话人关于‘陛下，请息怒’的表述的回复语句是：",
+          "question_type": "transcript_index",
+          "options": [
+            "A. 说话人B：你叫朕点样息怒？国事家事一团糟。",
+            "B. 说话人B：都要恁办法 㗎 嘛。",
+            "C. 无法判断（信息不足以定位回复）",
+            "D. 说话人B：点样息怒？"
+          ],
+          "answer": "D",
+          "answer_text": "说话人B：点样息怒？",
+          "rationale": [
+            "hallucination",
+            "wrong_speaker",
+            "unknown",
+            "ground_truth"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/qa_structure/zh_ref_a.mp3",
+              "start": 13.05,
+              "end": 14.73,
+              "dur": 1.68,
+              "transcript": "陛下，请息怒。",
+              "spk_id": "spk_14",
+              "spk_index": "spk_2"
+            }
+          ]
+        },
+        {
+          "question": "根据对话内容，其他人对某个说话人在第 13.05 秒到第 14.73 秒说话人关于‘请息怒’的表述的回复是：",
+          "question_type": "complex_index",
+          "options": [
+            "A. 无法判断（信息不足以定位回复）",
+            "B. 说话人B：都要恁办法 㗎 嘛。",
+            "C. 说话人B：点样息怒？",
+            "D. 说话人B：你叫朕点样息怒？国事家事一团糟。"
+          ],
+          "answer": "C",
+          "answer_text": "说话人B：点样息怒？",
+          "rationale": [
+            "unknown",
+            "wrong_speaker",
+            "ground_truth",
+            "hallucination"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/qa_structure/zh_ref_a.mp3",
+              "start": 13.05,
+              "end": 14.73,
+              "dur": 1.68,
+              "transcript": "陛下，请息怒。",
+              "spk_id": "spk_14",
+              "spk_index": "spk_2"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

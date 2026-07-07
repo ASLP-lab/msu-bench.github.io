@@ -1,0 +1,466 @@
+{
+  "task_id": "gender",
+  "level": "level1",
+  "dimension": "Speaker Attribute Recognition (SAR)",
+  "task_name": "Gender Identification (GI)",
+  "variants": {
+    "en": {
+      "language": "English",
+      "source": "robin hood origins",
+      "video_folder": "robin_hood_origins_part012",
+      "full_audio": {
+        "src": "bench_examples/audio/gender/en_full.mp3"
+      },
+      "audio": {
+        "a": {
+          "src": "bench_examples/audio/gender/en_ref_a.mp3",
+          "start": 12.95,
+          "end": 13.71,
+          "dur": 0.76,
+          "transcript": "He's all of us.",
+          "spk_id": "spk_05",
+          "spk_index": "spk_3"
+        }
+      },
+      "spk_a_transcript": "He's all of us.",
+      "spk_b_transcript": "So you're an admirer.",
+      "qa": [
+        {
+          "question": "What is the gender of the speaker in the following single-person audio?",
+          "question_type": "no_index",
+          "options": [
+            "A. Male",
+            "B. Undetermined gender",
+            "C. Female",
+            "D. Cannot be determined (Insufficient information to determine gender)"
+          ],
+          "answer": "C",
+          "answer_text": "Female",
+          "rationale": [
+            "wrong_speaker",
+            "hallucination",
+            "ground_truth",
+            "unknown"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/gender/en_ref_a.mp3",
+              "start": 12.95,
+              "end": 13.71,
+              "dur": 0.76,
+              "transcript": "He's all of us.",
+              "spk_id": "spk_05",
+              "spk_index": "spk_3"
+            }
+          ]
+        },
+        {
+          "question": "What is the gender of the speaker in the audio from 12.95 to 13.71 seconds?",
+          "question_type": "time_index",
+          "options": [
+            "A. Female",
+            "B. Uncertain gender",
+            "C. Male",
+            "D. Cannot determine (Insufficient information to determine gender)"
+          ],
+          "answer": "A",
+          "answer_text": "Female",
+          "rationale": [
+            "ground_truth",
+            "hallucination",
+            "wrong_speaker",
+            "unknown"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/gender/en_ref_a.mp3",
+              "start": 12.95,
+              "end": 13.71,
+              "dur": 0.76,
+              "transcript": "He's all of us.",
+              "spk_id": "spk_05",
+              "spk_index": "spk_3"
+            }
+          ]
+        },
+        {
+          "question": "What is the gender of the speaker who said ‘He's all of us’ in the audio?",
+          "question_type": "transcript_index",
+          "options": [
+            "A. Uncertain gender",
+            "B. Female",
+            "C. Cannot be determined (Insufficient information to determine gender)",
+            "D. Male"
+          ],
+          "answer": "B",
+          "answer_text": "Female",
+          "rationale": [
+            "hallucination",
+            "ground_truth",
+            "unknown",
+            "wrong_speaker"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/gender/en_ref_a.mp3",
+              "start": 12.95,
+              "end": 13.71,
+              "dur": 0.76,
+              "transcript": "He's all of us.",
+              "spk_id": "spk_05",
+              "spk_index": "spk_3"
+            }
+          ]
+        },
+        {
+          "question": "What is the gender of the third speaker in the entire conversation? Speaker indexing starts from the first speaker.",
+          "question_type": "speaker_index",
+          "options": [
+            "A. Male",
+            "B. Unable to determine (insufficient information to determine gender)",
+            "C. Female",
+            "D. Gender Uncertain"
+          ],
+          "answer": "C",
+          "answer_text": "Female",
+          "rationale": [
+            "wrong_speaker",
+            "unknown",
+            "ground_truth",
+            "hallucination"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/gender/en_full.mp3",
+              "start": null,
+              "end": null,
+              "dur": null,
+              "transcript": "",
+              "spk_id": null,
+              "spk_index": null,
+              "is_full": true
+            }
+          ]
+        },
+        {
+          "question": "What is the gender of the speaker who said ‘He's all of us’ between 12.95 and 13.71 seconds?",
+          "question_type": "complex_index",
+          "options": [
+            "A. Undetermined gender",
+            "B. Male",
+            "C. Cannot be determined (Insufficient information to determine gender)",
+            "D. Female"
+          ],
+          "answer": "D",
+          "answer_text": "Female",
+          "rationale": [
+            "hallucination",
+            "wrong_speaker",
+            "unknown",
+            "ground_truth"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/gender/en_ref_a.mp3",
+              "start": 12.95,
+              "end": 13.71,
+              "dur": 0.76,
+              "transcript": "He's all of us.",
+              "spk_id": "spk_05",
+              "spk_index": "spk_3"
+            }
+          ]
+        },
+        {
+          "question": "In the entire audio, which speakers are female? (Answer in the order of speaker appearance) Please select the best-fitting option. Speaker indexing starts from the first speaker.",
+          "question_type": "reverse_retrival",
+          "options": [
+            "A. the first speaker",
+            "B. the third speaker",
+            "C. Cannot determine (Insufficient information to determine gender)",
+            "D. the third and fourth speakers"
+          ],
+          "answer": "B",
+          "answer_text": "the third speaker",
+          "rationale": [
+            "wrong_speaker",
+            "ground_truth",
+            "unknown",
+            "hallucination"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/gender/en_full.mp3",
+              "start": null,
+              "end": null,
+              "dur": null,
+              "transcript": "",
+              "spk_id": null,
+              "spk_index": null,
+              "is_full": true
+            }
+          ]
+        },
+        {
+          "question": "How many male speakers are there in the entire audio? Please choose the most suitable option.",
+          "question_type": "reverse_count",
+          "options": [
+            "A. 3",
+            "B. 5",
+            "C. 4",
+            "D. Cannot determine (Insufficient information to determine gender)"
+          ],
+          "answer": "C",
+          "answer_text": "4",
+          "rationale": [
+            "wrong_speaker",
+            "hallucination",
+            "ground_truth",
+            "unknown"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/gender/en_full.mp3",
+              "start": null,
+              "end": null,
+              "dur": null,
+              "transcript": "",
+              "spk_id": null,
+              "spk_index": null,
+              "is_full": true
+            }
+          ]
+        }
+      ]
+    },
+    "zh": {
+      "language": "Chinese",
+      "source": "cd1",
+      "video_folder": "cd1_part009",
+      "full_audio": {
+        "src": "bench_examples/audio/gender/zh_full.mp3"
+      },
+      "audio": {
+        "a": {
+          "src": "bench_examples/audio/gender/zh_ref_a.mp3",
+          "start": 2.08,
+          "end": 3.84,
+          "dur": 1.76,
+          "transcript": "你没听见大夫说活不长了吗？",
+          "spk_id": "spk_02",
+          "spk_index": "spk_2"
+        }
+      },
+      "spk_a_transcript": "你没听见大夫说活不长了吗？",
+      "spk_b_transcript": "瞎折腾，你不知我知。",
+      "qa": [
+        {
+          "question": "下面单人讲话音频中，说话人的性别是什么？",
+          "question_type": "no_index",
+          "options": [
+            "A. 女性",
+            "B. 不确定性别",
+            "C. 男性",
+            "D. 无法判断（信息不足以确定性别）"
+          ],
+          "answer": "C",
+          "answer_text": "男性",
+          "rationale": [
+            "wrong_speaker",
+            "hallucination",
+            "ground_truth",
+            "unknown"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/gender/zh_ref_a.mp3",
+              "start": 2.08,
+              "end": 3.84,
+              "dur": 1.76,
+              "transcript": "你没听见大夫说活不长了吗？",
+              "spk_id": "spk_02",
+              "spk_index": "spk_2"
+            }
+          ]
+        },
+        {
+          "question": "音频中在第 2.08 秒到第 3.84 秒的说话人的性别是什么？",
+          "question_type": "time_index",
+          "options": [
+            "A. 男性",
+            "B. 女性",
+            "C. 不确定性别",
+            "D. 无法判断（信息不足以确定性别）"
+          ],
+          "answer": "A",
+          "answer_text": "男性",
+          "rationale": [
+            "ground_truth",
+            "wrong_speaker",
+            "hallucination",
+            "unknown"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/gender/zh_ref_a.mp3",
+              "start": 2.08,
+              "end": 3.84,
+              "dur": 1.76,
+              "transcript": "你没听见大夫说活不长了吗？",
+              "spk_id": "spk_02",
+              "spk_index": "spk_2"
+            }
+          ]
+        },
+        {
+          "question": "音频中说过‘你没听见大夫说活不长了吗’的说话人的性别是什么？",
+          "question_type": "transcript_index",
+          "options": [
+            "A. 无法判断（信息不足以确定性别）",
+            "B. 男性",
+            "C. 女性",
+            "D. 不确定性别"
+          ],
+          "answer": "B",
+          "answer_text": "男性",
+          "rationale": [
+            "unknown",
+            "ground_truth",
+            "wrong_speaker",
+            "hallucination"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/gender/zh_ref_a.mp3",
+              "start": 2.08,
+              "end": 3.84,
+              "dur": 1.76,
+              "transcript": "你没听见大夫说活不长了吗？",
+              "spk_id": "spk_02",
+              "spk_index": "spk_2"
+            }
+          ]
+        },
+        {
+          "question": "在整段对话中，第二个说话人的性别是什么？ 说话人序号从第一个说话人开始编号。",
+          "question_type": "speaker_index",
+          "options": [
+            "A. 不确定性别",
+            "B. 无法判断（信息不足以确定性别）",
+            "C. 女性",
+            "D. 男性"
+          ],
+          "answer": "D",
+          "answer_text": "男性",
+          "rationale": [
+            "hallucination",
+            "unknown",
+            "wrong_speaker",
+            "ground_truth"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/gender/zh_full.mp3",
+              "start": null,
+              "end": null,
+              "dur": null,
+              "transcript": "",
+              "spk_id": null,
+              "spk_index": null,
+              "is_full": true
+            }
+          ]
+        },
+        {
+          "question": "在第 2.08 秒到第 3.84 秒说过‘你没听见大夫说活不长了吗’的说话人，其性别是什么？",
+          "question_type": "complex_index",
+          "options": [
+            "A. 女性",
+            "B. 男性",
+            "C. 不确定性别",
+            "D. 无法判断（信息不足以确定性别）"
+          ],
+          "answer": "B",
+          "answer_text": "男性",
+          "rationale": [
+            "wrong_speaker",
+            "ground_truth",
+            "hallucination",
+            "unknown"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/gender/zh_ref_a.mp3",
+              "start": 2.08,
+              "end": 3.84,
+              "dur": 1.76,
+              "transcript": "你没听见大夫说活不长了吗？",
+              "spk_id": "spk_02",
+              "spk_index": "spk_2"
+            }
+          ]
+        },
+        {
+          "question": "在整段音频中，性别为男性的说话人有哪些？（用 说话人出现顺序 作答）请选择最符合的一项。 说话人序号从第一个说话人开始编号。",
+          "question_type": "reverse_retrival",
+          "options": [
+            "A. 第二个说话人、第四个说话人",
+            "B. 第二个说话人、第四个说话人、第七个说话人",
+            "C. 无法判断（信息不足以确定性别）",
+            "D. 第一个说话人、第二个说话人、第四个说话人、第七个说话人"
+          ],
+          "answer": "B",
+          "answer_text": "第二个说话人、第四个说话人、第七个说话人",
+          "rationale": [
+            "wrong_speaker",
+            "ground_truth",
+            "unknown",
+            "hallucination"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/gender/zh_full.mp3",
+              "start": null,
+              "end": null,
+              "dur": null,
+              "transcript": "",
+              "spk_id": null,
+              "spk_index": null,
+              "is_full": true
+            }
+          ]
+        },
+        {
+          "question": "在整段音频中，性别为女性的说话人一共有几个？请选择最符合的一项。",
+          "question_type": "reverse_count",
+          "options": [
+            "A. 3 个",
+            "B. 无法判断（信息不足以确定性别）",
+            "C. 4 个",
+            "D. 6 个"
+          ],
+          "answer": "C",
+          "answer_text": "4 个",
+          "rationale": [
+            "wrong_speaker",
+            "unknown",
+            "ground_truth",
+            "hallucination"
+          ],
+          "clips": [
+            {
+              "src": "bench_examples/audio/gender/zh_full.mp3",
+              "start": null,
+              "end": null,
+              "dur": null,
+              "transcript": "",
+              "spk_id": null,
+              "spk_index": null,
+              "is_full": true
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
